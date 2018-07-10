@@ -23,3 +23,9 @@
 @property (nonatomic, assign) id<selectDelegate> delegate;
 //+ (instancetype)shareXTGuideVC;
 @end
+
+
+@interface UIViewController (IMYPublic)
+///该vc的navigationController
+- (UINavigationController*)imy_navigationController;
+@end

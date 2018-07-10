@@ -8,6 +8,7 @@
 
 #import "IMYADLaunchDemo.h"
 #import "IMYWebViewController.h"
+#import "XTGuidePagesViewController.h"
 
 @interface IMYADLaunchDemo ()
 @property (nonatomic, strong) UIWindow* window;

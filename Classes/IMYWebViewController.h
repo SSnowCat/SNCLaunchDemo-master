@@ -13,7 +13,3 @@
 @end
 
 
-@interface UIViewController (IMYPublic)
-///该vc的navigationController
-- (UINavigationController*)imy_navigationController;
-@end

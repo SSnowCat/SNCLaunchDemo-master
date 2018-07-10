@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self.navigationController.navigationBar setHidden:NO];
     self.title = @"首页";
     
     self.view.backgroundColor = [UIColor greenColor];

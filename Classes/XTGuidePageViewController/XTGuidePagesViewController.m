@@ -18,8 +18,16 @@
 
 @implementation XTGuidePagesViewController
 
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController.navigationBar setHidden:YES];
+}
+
 - (void)guidePageControllerWithImages:(NSArray *)images
 {
+    
+    [self.navigationController.navigationBar setHidden:YES];
     UIScrollView *gui = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, s_w, s_h)];
     gui.delegate = self;
     gui.pagingEnabled = YES;
@@ -95,6 +103,26 @@
     self.pageControl.currentPage = scrollView.contentOffset.x / s_w;
 }
 
+@end
+
+
+@implementation UIViewController (IMYPublic)
+- (UINavigationController*)imy_navigationController
+{
+    UINavigationController* nav = nil;
+    if ([self isKindOfClass:[UINavigationController class]]) {
+        nav = (id)self;
+    }
+    else {
+        if ([self isKindOfClass:[UITabBarController class]]) {
+            nav = [((UITabBarController*)self).selectedViewController imy_navigationController];
+        }
+        else {
+            nav = self.navigationController;
+        }
+    }
+    return nav;
+}
 @end
 
 

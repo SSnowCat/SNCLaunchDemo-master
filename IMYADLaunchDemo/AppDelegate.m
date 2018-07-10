@@ -20,15 +20,21 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
+    UIViewController *mainVC = [[UIViewController alloc] init];
+    UINavigationController *mainNavVC = [[UINavigationController alloc] initWithRootViewController:mainVC];
+    [mainNavVC.navigationBar setHidden:YES];
+    self.window.rootViewController = mainNavVC;
     [self.window makeKeyAndVisible];
-    
+//    return YES;
+//}
+//
     // 测试的时候改变info 里的版本号就可以了
     NSArray *images = @[@"1", @"2", @"3", @"4"];
     XTGuidePagesViewController *xt = [[XTGuidePagesViewController alloc] init];
-            self.window.rootViewController = xt;
-            xt.delegate = self;
-            [xt guidePageControllerWithImages:images];
+    [mainNavVC addChildViewController:xt];
+            //self.window.rootViewController = xt;
+    xt.delegate = self;
+    [xt guidePageControllerWithImages:images];
 //    BOOL y = [XTGuidePagesViewController isShow];
 //    if (y) {
 //        XTGuidePagesViewController *xt = [[XTGuidePagesViewController alloc] init];
@@ -42,8 +48,11 @@
 }
 - (void)clickEnter
 {
+    
     ViewController *vc = [[ViewController alloc] init];
-    self.window.rootViewController = vc;
+    UINavigationController *mainNavVC = [[UINavigationController alloc] initWithRootViewController:vc];
+    [mainNavVC.navigationBar setHidden:YES];
+    self.window.rootViewController = mainNavVC;
     [self.window.layer transitionWithAnimType:TransitionAnimTypeRippleEffect subType:TransitionSubtypesFromTop curve:TransitionCurveDefault duration:1.0f];
 }
 

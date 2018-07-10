@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self.navigationController.navigationBar setHidden:NO];
     self.title = @"我是广告";
     self.webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
     self.webView.backgroundColor = [UIColor whiteColor];
@@ -27,21 +28,3 @@
 
 
 
-@implementation UIViewController (IMYPublic)
-- (UINavigationController*)imy_navigationController
-{
-    UINavigationController* nav = nil;
-    if ([self isKindOfClass:[UINavigationController class]]) {
-        nav = (id)self;
-    }
-    else {
-        if ([self isKindOfClass:[UITabBarController class]]) {
-            nav = [((UITabBarController*)self).selectedViewController imy_navigationController];
-        }
-        else {
-            nav = self.navigationController;
-        }
-    }
-    return nav;
-}
-@end
