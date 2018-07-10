@@ -1,13 +1,7 @@
 《优雅的插入开屏广告》-- 不改动任何一行代码
+在这个基础上再添加了引导页，
 =============================================
 
-这个框架已经在`美柚`稳定使用半年多了，美柚总用户突破1亿，日活接近千万，代码的稳定性是可以放心的。有需求或者bug可以提issues，我会尽快回复。
-
-![](http://www.meiyou.com/g/images/logo1.png)
-
-最近在CocoaChina上看到蛮多小伙伴分享了自己的开屏广告经验和代码。
-[分分钟解决iOS开发中App启动广告的功能](http://www.cocoachina.com/ios/20160615/16652.html)，
-[App启动加载广告页面思路](http://www.cocoachina.com/ios/20160614/16671.html)
 
 代码还是不错的，但是个人觉得，上诉代码的耦合性还是太强了，需要对 AppDelegate 和 ViewController 等代码进行入侵。如果按照模块化方式来开发，后续广告要扩展和维护都是很艰难的，因为你要担心你埋入的那些代码被其他人员改动了。 
 
@@ -127,4 +121,30 @@ iOS的通知是一个神器，它会发出应用的启动，退到后台等事�
 
 demo(gif图，会动的。。)
 
+
+然后我在上面的基础上添加了一个引导页的视图，引导页就是一个scrollview。实现起来应该也没什么难度
+```
+//这段代码是我做测试的时候用的，是为了每次启动都去跑引导页
+NSArray *images = @[@"1", @"2", @"3", @"4"];
+    XTGuidePagesViewController *xt = [[XTGuidePagesViewController alloc] init];
+    [mainNavVC addChildViewController:xt];
+            //self.window.rootViewController = xt;
+    xt.delegate = self;
+    [xt guidePageControllerWithImages:images];```
+
+
+//正常的视图
+
+BOOL y = [XTGuidePagesViewController isShow];
+    if (y) {
+       XTGuidePagesViewController *xt = [[XTGuidePagesViewController alloc] init];
+        self.window.rootViewController = xt;
+        xt.delegate = self;
+        [xt guidePageControllerWithImages:images];
+    }else{
+        [self clickEnter];
+
+```
+
+然后最开始集成的时候，发现老有问题，然后看视图才知道我界面顺序没加对，开屏页的根视图是navigationController。而那个引导页的根视图是UIViewController, 改一下appdelegate 里面的东西就可以了
 ![](https://raw.githubusercontent.com/li6185377/IMYADLaunchDemo/master/screenshot/ad_launch_demo.gif)
