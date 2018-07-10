@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:IMYADLaunchDemo.xcodeproj">
+      location = "self:/Users/ssnowcat/Downloads/IMYADLaunchDemo-master/SNCLaunchDemo.xcodeproj">
    </FileRef>
 </Workspace>

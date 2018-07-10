@@ -26,7 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3614C2581D20B849003F73CD /* IMYADLaunchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMYADLaunchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3614C2581D20B849003F73CD /* SNCLaunchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNCLaunchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3614C25C1D20B849003F73CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3614C25E1D20B849003F73CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3614C25F1D20B849003F73CD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -42,10 +42,10 @@
 		9E6E034320F34F24009F00FF /* imag2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = imag2.jpg; sourceTree = "<group>"; };
 		9E6E034520F34F2E009F00FF /* imag3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = imag3.jpg; sourceTree = "<group>"; };
 		9E6E035220F36C33009F00FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9E6E035D20F3873C009F00FF /* CALayer+Transition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CALayer+Transition.h"; path = "XTGuidePageViewController/CALayer+Transition.h"; sourceTree = "<group>"; };
-		9E6E035E20F3873C009F00FF /* CALayer+Transition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CALayer+Transition.m"; path = "XTGuidePageViewController/CALayer+Transition.m"; sourceTree = "<group>"; };
-		9E6E035F20F3873C009F00FF /* XTGuidePagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XTGuidePagesViewController.h; path = XTGuidePageViewController/XTGuidePagesViewController.h; sourceTree = "<group>"; };
-		9E6E036020F3873C009F00FF /* XTGuidePagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XTGuidePagesViewController.m; path = XTGuidePageViewController/XTGuidePagesViewController.m; sourceTree = "<group>"; };
+		9E6E035D20F3873C009F00FF /* CALayer+Transition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Transition.h"; sourceTree = "<group>"; };
+		9E6E035E20F3873C009F00FF /* CALayer+Transition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Transition.m"; sourceTree = "<group>"; };
+		9E6E035F20F3873C009F00FF /* XTGuidePagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTGuidePagesViewController.h; sourceTree = "<group>"; };
+		9E6E036020F3873C009F00FF /* XTGuidePagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTGuidePagesViewController.m; sourceTree = "<group>"; };
 		9E6E036320F38767009F00FF /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		9E6E036420F38768009F00FF /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		9E6E036520F38768009F00FF /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
@@ -67,7 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				3614C2781D20B8EB003F73CD /* Classes */,
-				3614C25A1D20B849003F73CD /* IMYADLaunchDemo */,
+				3614C25A1D20B849003F73CD /* SNCLaunchDemo */,
 				3614C2591D20B849003F73CD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,12 +75,12 @@
 		3614C2591D20B849003F73CD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3614C2581D20B849003F73CD /* IMYADLaunchDemo.app */,
+				3614C2581D20B849003F73CD /* SNCLaunchDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3614C25A1D20B849003F73CD /* IMYADLaunchDemo */ = {
+		3614C25A1D20B849003F73CD /* SNCLaunchDemo */ = {
 			isa = PBXGroup;
 			children = (
 				3614C25E1D20B849003F73CD /* AppDelegate.h */,
@@ -92,7 +92,7 @@
 				3614C26F1D20B849003F73CD /* Info.plist */,
 				3614C25B1D20B849003F73CD /* Supporting Files */,
 			);
-			path = IMYADLaunchDemo;
+			path = SNCLaunchDemo;
 			sourceTree = "<group>";
 		};
 		3614C25B1D20B849003F73CD /* Supporting Files */ = {
@@ -106,6 +106,17 @@
 		3614C2781D20B8EB003F73CD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				9EC205C120F457870052F331 /* GuidePage */,
+				9EC205C220F457B40052F331 /* SNCLanchPage */,
+				3614C2811D20BFB2003F73CD /* IMYWebViewController.h */,
+				3614C2821D20BFB2003F73CD /* IMYWebViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9EC205C120F457870052F331 /* GuidePage */ = {
+			isa = PBXGroup;
+			children = (
 				9E6E036320F38767009F00FF /* 1.png */,
 				9E6E036420F38768009F00FF /* 2.png */,
 				9E6E036520F38768009F00FF /* 3.png */,
@@ -114,23 +125,28 @@
 				9E6E035E20F3873C009F00FF /* CALayer+Transition.m */,
 				9E6E035F20F3873C009F00FF /* XTGuidePagesViewController.h */,
 				9E6E036020F3873C009F00FF /* XTGuidePagesViewController.m */,
+			);
+			path = GuidePage;
+			sourceTree = "<group>";
+		};
+		9EC205C220F457B40052F331 /* SNCLanchPage */ = {
+			isa = PBXGroup;
+			children = (
 				3614C27C1D20BA8E003F73CD /* adimage.png */,
 				9E6E034320F34F24009F00FF /* imag2.jpg */,
 				9E6E034520F34F2E009F00FF /* imag3.jpg */,
 				3614C2791D20B8FD003F73CD /* IMYADLaunchDemo.h */,
 				3614C27A1D20B8FD003F73CD /* IMYADLaunchDemo.m */,
-				3614C2811D20BFB2003F73CD /* IMYWebViewController.h */,
-				3614C2821D20BFB2003F73CD /* IMYWebViewController.m */,
 			);
-			path = Classes;
+			path = SNCLanchPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3614C2571D20B849003F73CD /* IMYADLaunchDemo */ = {
+		3614C2571D20B849003F73CD /* SNCLaunchDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3614C2721D20B849003F73CD /* Build configuration list for PBXNativeTarget "IMYADLaunchDemo" */;
+			buildConfigurationList = 3614C2721D20B849003F73CD /* Build configuration list for PBXNativeTarget "SNCLaunchDemo" */;
 			buildPhases = (
 				3614C2541D20B849003F73CD /* Sources */,
 				3614C2551D20B849003F73CD /* Frameworks */,
@@ -140,9 +156,9 @@
 			);
 			dependencies = (
 			);
-			name = IMYADLaunchDemo;
+			name = SNCLaunchDemo;
 			productName = IMYADLaunchDemo;
-			productReference = 3614C2581D20B849003F73CD /* IMYADLaunchDemo.app */;
+			productReference = 3614C2581D20B849003F73CD /* SNCLaunchDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -159,7 +175,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3614C2531D20B849003F73CD /* Build configuration list for PBXProject "IMYADLaunchDemo" */;
+			buildConfigurationList = 3614C2531D20B849003F73CD /* Build configuration list for PBXProject "SNCLaunchDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -172,7 +188,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3614C2571D20B849003F73CD /* IMYADLaunchDemo */,
+				3614C2571D20B849003F73CD /* SNCLaunchDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -314,10 +330,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = IMYADLaunchDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SNCLaunchDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ljh.IMYADLaunchDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = snc.SNCLaunchDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -328,10 +344,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = IMYADLaunchDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SNCLaunchDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ljh.IMYADLaunchDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = snc.SNCLaunchDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -340,7 +356,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3614C2531D20B849003F73CD /* Build configuration list for PBXProject "IMYADLaunchDemo" */ = {
+		3614C2531D20B849003F73CD /* Build configuration list for PBXProject "SNCLaunchDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3614C2701D20B849003F73CD /* Debug */,
@@ -349,7 +365,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3614C2721D20B849003F73CD /* Build configuration list for PBXNativeTarget "IMYADLaunchDemo" */ = {
+		3614C2721D20B849003F73CD /* Build configuration list for PBXNativeTarget "SNCLaunchDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3614C2731D20B849003F73CD /* Debug */,
